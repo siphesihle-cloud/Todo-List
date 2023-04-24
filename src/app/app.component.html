@@ -1,0 +1,24 @@
+
+<br>
+<br>
+    <router-outlet>
+      
+      <form class="contain">
+        <label class="todo">To do list</label>
+        <br>
+        <br>
+        <mat-selection-list #shoes>
+            <mat-list-option *ngFor="let shoe of typesOfShoes">
+              {{shoe}}
+            </mat-list-option>
+          </mat-selection-list>
+          
+          
+        <button mat-raised-button routerLink="/add" routerLinkActive="true" class="create"> Add</button>
+        <button mat-raised-button class="delete">Delete</button>
+        <button mat-raised-button class="update">Update</button>
+        
+    </form>
+    
+    
+    </router-outlet>
